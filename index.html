@@ -1,17 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container-bg {
+      background: linear-gradient(to bottom, #ff5733, #f7be69);
+      border-radius: 10px;
+      padding: 20px;
+      width: 300px;
+      text-align: center;
+    }
+
+    .btn {
+      background-color: #ff5733;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 20px;
+      border-radius: 5px;
+    }
+
+    .btn:hover {
+      background-color: #d13800;
+    }
+  </style>
+</head>
+
 <body>
-  <div class="container-bg" style="background-color: grey; padding: 20px;">
-    <div class="container" style="background-color: black; padding: 10px; text-align: center;">
-      <div class="text-center">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLScQc1zcXwG7bg4zseA4uWupOK0vBf3q94H-KYELFTcQs175pQ/viewform">
-          <button
-            type="button"
-            class="btn btn-outline-danger"
-            style="background-color: grey; border: 1px solid red; padding: 10px 20px; font-size: 20px;"
-          >
-            <h2>Click HERE!</h2>
-          </button>
-        </a>
-      </div>
-    </div>
+  <div class="container-bg">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScQc1zcXwG7bg4zseA4uWupOK0vBf3q94H-KYELFTcQs175pQ/viewform">
+      <button type="button" class="btn">
+        <h2>Click HERE!</h2>
+      </button>
+    </a>
   </div>
 </body>
+
+</html>
