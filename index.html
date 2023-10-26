@@ -49,10 +49,18 @@
         <h3>Please Click Here to get Transferred to the Contest !</h3>
       </button>
     </a>
-    <a href="https://docs.google.com/document/d/1c9r7xYTAuxoiaSa9LYZjFFT-ghx-CxWWc1KLJ1txRpk/edit?usp=drivesdk">
-      <button type="button" class="btn">
+    <a>
+      <button id="downloadButton" type="button" class="btn">
         <h3>If You Want to Use SmartCAT, Click Here</h3>
       </button>
+      <script>
+        document.getElementById("downloadButton").addEventListener("click", function() {
+            var downloadLink = document.createElement("a");
+            downloadLink.href = "Oyun Çevirisi Atölyesi.docx"; // Replace with the actual file path
+            downloadLink.download = "Oyun Çevirisi Atölyesi.docx"; // The name the file will be saved as
+            downloadLink.click();
+        });
+    </script>
     </a>
   </div>
 </body>
